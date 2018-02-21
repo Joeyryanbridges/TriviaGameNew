@@ -1,0 +1,50 @@
+
+body{
+  background-image:url("../images/friends background.jpg");
+  background-repeat:;
+  background-image: center;
+}
+
+h2{
+  font-weight:bold;
+  font-size:xx-large;
+}
+
+form{
+  padding: 5px 5px 15px 5px;
+}
+
+.jumbotron {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  height: 300px;
+  color: inherit;
+  background-color: black;
+  border: 3px solid black;
+  border-radius: 50px;
+}
+
+#timer{
+  color: white;
+}
+
+#question{
+  color:white;
+}
+
+#body-container{
+  background-color :pink;
+  opacity: 0.9;
+  height:auto;
+  width: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+
+button{
+  margin: 10px;
+}
+
+
