@@ -39,7 +39,7 @@ var imgSrc = "";
 // =================================
 // Questions for game
 var questionArray = [
-	{
+{
 		question: "What is the band's name who performs the opening theme song?",
 		choices: ['Jimmy Eat World','Third Eye Blind','Goo Goo Dolls','The Rembrants'],
 		correctChoice: "The Rembrants",
@@ -65,7 +65,7 @@ var questionArray = [
 	},
 	{
 		question: "What is Chandlers dad's burlesque show called?",
-		choices: ['Viva La Gaydas', 'Tiny thangs shakin', 'Its raining men', 'Tight Squeeze'],
+		choices: ['Viva la Gaydas', 'Tiny thangs shakin', 'Its raining men', 'Tight Squeeze'],
 		correctChoice: "Viva La Gaydas",
 		image: "assets/images/question5.gif",
 	},
@@ -118,8 +118,7 @@ var reset = function(){
 	displayQnA(questionArray[count]);
 	}
 	
-	// Function to create radio buttons populated with choices and Submit button 
-	// Struggled with this the most
+	// Function to create radio buttons populated with choices and Submit button
 	
 	var displayQnA = function(currentQ){
 		$("#question").html(currentQ.question);
@@ -131,7 +130,7 @@ var reset = function(){
 		$("#choices").append(option);
 		}
 		$("label").after("</br>");
-		var btn = $("<button id='verify' type='button'>").addClass("btn btn-lg btn-danger").text("Submit");
+		var btn = $("<button id='verify' type='button'>").addClass("btn btn-lg btn-primary").text("Submit");
 		$("#choices").append(btn);
 		answer = currentQ.correctChoice;
 		imgSrc = currentQ.image;
@@ -150,8 +149,6 @@ var reset = function(){
 	  $("#timer").html("<span class='glyphicon glyphicon-hourglass'></span> Time Remaining: " + time);
 	  timer();
 	  }
-
-	// Once question que has finished present with the players results
 		else{
 			$("#timer").text("");
 			$("#question").text("The results are in:");
