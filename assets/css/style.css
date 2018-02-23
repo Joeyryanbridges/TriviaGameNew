@@ -1,8 +1,7 @@
 
 body{
   background-image:url("../images/friends background.jpg");
-  background-repeat:;
-  background-image: center;
+  
 }
 
 h2{
@@ -15,27 +14,31 @@ form{
 }
 
 .jumbotron {
-  padding-top: 10px;
-  padding-bottom: 10px;
-  margin-bottom: 10px;
   height: 300px;
   color: inherit;
-  background-color: black;
+  background-color: darkorchid;
   border: 3px solid black;
   border-radius: 50px;
 }
 
+.jumbotron.text-center {
+  background-image: url(../images/friends_title_jumbo.png);
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
+
 #timer{
-  color: white;
+  color: rgb(0, 0, 0);
 }
 
 #question{
-  color:white;
+  color:rgb(0, 0, 0);
 }
 
 #body-container{
-  background-color :pink;
-  opacity: 0.9;
+  background-color :rgb(255, 255, 255);
+  opacity: 1.0;
   height:auto;
   width: auto;
   padding-left: 20px;
@@ -47,4 +50,11 @@ button{
   margin: 10px;
 }
 
+input[type="radio"] {
+  margin: 5px 10px;
+  padding: 5px;
+}
 
+b{
+  text-decoration: none;
+}
