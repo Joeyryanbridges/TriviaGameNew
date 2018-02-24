@@ -6,6 +6,7 @@ $("#body-container").hide();
 $("#body-container").slideDown(6000);
 
 
+
 // Timer Countdown variables and functions
 var time = 10;
 var intervalId;
@@ -24,7 +25,8 @@ var countdown = function(){
   if(time===0){
   	timeOut = true;
   	clearInterval(intervalId);
-  	showAnswer();
+	  showAnswer();
+	  
   }
 }
 
@@ -175,7 +177,9 @@ var reset = function(){
 		}
 		$("#choices").append("<img src='" + imgSrc + "' alt='correctAnswer'>");
 		setTimeout(nextQ,4000);
+
 	}
+			
 	// ========================================
 	// Check if correct answer selected
 	
@@ -207,6 +211,4 @@ var reset = function(){
 	$(document).on("click", ".reset", function(){
 		reset();
 	});
-
-
 
